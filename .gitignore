@@ -1,0 +1,10 @@
+# Mac OS
+.DS_Store
+
+# IDE
+.vscode
+*.code-workspace
+
+# Python (if you ever use the virtual environment for scripts)
+.venv
+__pycache__/
