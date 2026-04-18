@@ -1,0 +1,15 @@
+{
+  "name": "nike-scrollytelling-landing-page",
+  "version": "1.0.0",
+  "description": "Premium Nike scrollytelling experience.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "nike",
+    "scrollytelling",
+    "gsap"
+  ],
+  "author": "",
+  "license": "ISC"
+}

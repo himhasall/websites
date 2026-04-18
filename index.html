@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Hungry For More</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Archivo+Narrow:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Scrollytelling Section -->
+    <section id="hero" class="hero">
+        <div class="hero-sticky">
+            <!-- Ambient blurred canvas in background -->
+            <canvas id="ambient-canvas"></canvas>
+            <!-- Foreground crisp canvas with mask -->
+            <canvas id="tiger-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- Post-Hero Content -->
+    <main class="main-content">
+        <!-- P1: Product Intro -->
+        <section class="section intro-section">
+            <div class="container text-center">
+                <p class="eyebrow">First Look</p>
+                <h2 class="section-title">NIKE AIR MAX PULSE</h2>
+                <p class="description">
+                    Pushing past the limits of what you thought possible. The new Air Max Pulse brings an underground aesthetic to the iconic Air line, combining unbelievable comfort with defiant style.
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-dark">Shop Now</a>
+                    <a href="#" class="btn btn-outline">Explore More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- P2: Carousel -->
+        <section class="section carousel-section">
+            <div class="container">
+                <div class="carousel-header">
+                    <h3 class="carousel-title">Best of Air Max</h3>
+                    <div class="carousel-nav">
+                        <button class="nav-btn prev-btn" aria-label="Previous">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="nav-btn next-btn" aria-label="Next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="product-carousel">
+                    <!-- Carousel items will be populated here -->
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?auto=format&fit=crop&q=80&w=600&h=600" alt="Nike Air Max Pulse" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-name">Nike Air Max Pulse</h4>
+                                <p class="product-category">Men's Shoes</p>
+                                <p class="product-price">$150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600&h=600" alt="Nike Air Max 97" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-name">Nike Air Max 97</h4>
+                                <p class="product-category">Women's Shoes</p>
+                                <p class="product-price">$175</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=600&h=600" alt="Nike Air Max Plus" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-name">Nike Air Max Plus</h4>
+                                <p class="product-category">Men's Shoes</p>
+                                <p class="product-price">$180</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1552346154-21d32810baa3?auto=format&fit=crop&q=80&w=600&h=600" alt="Nike Air Max 90" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-name">Nike Air Max 90</h4>
+                                <p class="product-category">Kids' Shoes</p>
+                                <p class="product-price">$100</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&q=80&w=600&h=600" alt="Nike Air Max 270" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-name">Nike Air Max 270</h4>
+                                <p class="product-category">Men's Shoes</p>
+                                <p class="product-price">$160</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- P3: Cinematic Banner -->
+        <section class="section banner-section">
+            <div class="banner-wrapper">
+                <img src="https://images.unsplash.com/photo-1549471013-3364d7220b75?auto=format&fit=crop&q=80&w=1600&h=1200" alt="Cheetah Forest" class="banner-image">
+                <div class="banner-content">
+                    <h2 class="banner-title">STEP INTO WHAT FEELS GOOD</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- P4: The Essentials -->
+        <section class="section essentials-section">
+            <div class="container">
+                <h3 class="essentials-title">The Essentials</h3>
+                <div class="essentials-grid">
+                    <div class="essential-card">
+                        <img src="https://images.unsplash.com/photo-1551855350-13f639641772?auto=format&fit=crop&q=80&w=800&h=1000" alt="Men's Essentials" class="essential-image">
+                        <a href="#" class="btn btn-light essential-btn">Men's</a>
+                    </div>
+                    <div class="essential-card">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=800&h=1000" alt="Women's Essentials" class="essential-image">
+                        <a href="#" class="btn btn-light essential-btn">Women's</a>
+                    </div>
+                    <div class="essential-card">
+                        <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&q=80&w=800&h=1000" alt="Kids' Essentials" class="essential-image">
+                        <a href="#" class="btn btn-light essential-btn">Kids'</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4 class="footer-heading">FIND A STORE</h4>
+                <ul class="footer-links">
+                    <li><a href="#">BECOME A MEMBER</a></li>
+                    <li><a href="#">SIGN UP FOR EMAIL</a></li>
+                    <li><a href="#">SEND US FEEDBACK</a></li>
+                    <li><a href="#">STUDENT DISCOUNTS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">GET HELP</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">ABOUT NIKE</h4>
+                <ul class="footer-links">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-icons">
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21.582 6.186c-.23-.86-.908-1.538-1.768-1.768C18.253 4 12 4 12 4s-6.253 0-7.814.418c-.86.23-1.538.908-1.768 1.768C2 7.747 2 12 2 12s0 4.253.418 5.814c.23.86.908 1.538 1.768 1.768C5.747 20 12 20 12 20s6.253 0 7.814-.418c.86-.23 1.538-.908 1.768-1.768C24 16.253 24 12 24 12s0-4.253-.418-5.814zM9.999 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
